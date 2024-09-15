@@ -1,1 +1,7 @@
 [13-Sep-2024 16:07:58 UTC] Erreur d’événement de replanification de tâche pour le crochet action_scheduler_run_queue. Code d’erreur : could_not_set. Message d’erreur : La liste des évènements planifiés n’a pas pu être sauvegardée.. Données : {"schedule":"every_minute","args":["WP Cron"],"interval":60}
+[14-Sep-2024 01:32:24 UTC] PHP Warning:  Attempt to read property "name" on null in /Users/jo/Local Sites/planty/app/public/wp-content/plugins/ocean-extra/includes/menu-icons/includes/settings.php on line 455
+[14-Sep-2024 01:32:24 UTC] PHP Warning:  Attempt to read property "name" on null in /Users/jo/Local Sites/planty/app/public/wp-content/plugins/ocean-extra/includes/menu-icons/includes/settings.php on line 455
+[15-Sep-2024 12:49:08 UTC] PHP Warning:  Attempt to read property "name" on null in /Users/jo/Local Sites/planty/app/public/wp-content/plugins/ocean-extra/includes/menu-icons/includes/settings.php on line 455
+[15-Sep-2024 12:49:08 UTC] PHP Warning:  Attempt to read property "name" on null in /Users/jo/Local Sites/planty/app/public/wp-content/plugins/ocean-extra/includes/menu-icons/includes/settings.php on line 455
+[15-Sep-2024 13:00:47 UTC] PHP Warning:  Attempt to read property "name" on null in /Users/jo/Local Sites/planty/app/public/wp-content/plugins/ocean-extra/includes/menu-icons/includes/settings.php on line 455
+[15-Sep-2024 13:00:47 UTC] PHP Warning:  Attempt to read property "name" on null in /Users/jo/Local Sites/planty/app/public/wp-content/plugins/ocean-extra/includes/menu-icons/includes/settings.php on line 455

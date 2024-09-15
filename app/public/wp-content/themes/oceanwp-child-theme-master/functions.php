@@ -31,3 +31,11 @@ function oceanwp_child_enqueue_parent_style() {
 }
 
 add_action( 'wp_enqueue_scripts', 'oceanwp_child_enqueue_parent_style' );
+
+function register_my_menu() {
+    register_nav_menus( array(
+        'header' => __( 'Header Menu', 'ocean-child' )
+    ));
+}
+add_action( 'init', 'register_my_menu' );
+

@@ -28,6 +28,15 @@
 		<?php do_action( 'ocean_before_wrap' ); ?>
 
 		<div id="wrap" class="clr">
+		<nav id="site-navigation" class="main-navigation">
+                <?php
+                wp_nav_menu( array(
+					'theme_location' => 'header', 
+					'menu_class'     => 'nav-menu',
+				) );
+				
+                ?>
+            </nav>
 
 			<?php do_action( 'ocean_top_bar' ); ?>
 
