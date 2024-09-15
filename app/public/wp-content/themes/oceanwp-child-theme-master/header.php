@@ -29,18 +29,24 @@
 
 		<div id="wrap" class="clr">
 		<nav id="site-navigation" class="main-navigation">
-                <?php
-                wp_nav_menu( array(
-					'theme_location' => 'header', 
-					'menu_class'     => 'nav-menu',
-				) );
-				
-                ?>
-            </nav>
+			<div class="logo">
+				<?php
+				the_custom_logo(); //affiche logo de wordpress
+				?>
+			</div>	
+            <?php
+            wp_nav_menu( array(
+				'theme_location' => 'header', 
+				'menu_class'     => 'nav-menu',
+			) );
+			?>
+        </nav>
 
 			<?php do_action( 'ocean_top_bar' ); ?>
 
-			<?php do_action( 'ocean_header' ); ?>
+			<?php 
+			// do_action( 'ocean_header' ); /* mis en commentaires pour enlever l'en tete tout en gardant l'image pour le menu */
+			?>
 
 			<?php do_action( 'ocean_before_main' ); ?>
 
