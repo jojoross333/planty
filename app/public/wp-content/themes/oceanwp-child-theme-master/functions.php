@@ -39,3 +39,11 @@ function register_my_menu() {
 }
 add_action( 'init', 'register_my_menu' );
 
+function register_my_menus() {
+    register_nav_menus(
+        array(
+            'footer' => __( 'Pied de Page' ),
+        )
+    );
+}
+add_action( 'init', 'register_my_menus' );

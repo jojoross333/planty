@@ -38,8 +38,13 @@
             wp_nav_menu( array(
 				'theme_location' => 'header', 
 				'menu_class'     => 'nav-menu',
+				'container' => false,
 			) );
 			?>
+			<!-- Bouton Commander -->
+			<div class="header-button">
+                <a href="/commander" class="btn-commander">Commander</a>
+            </div>
         </nav>
 
 			<?php do_action( 'ocean_top_bar' ); ?>
