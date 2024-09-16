@@ -40,6 +40,11 @@ Version: 1.0
     margin-left: 50px; /* Ajuste l'espacement entre les éléments du menu */
 }
 
+.nav-menu li a:hover {
+    color: #000000;
+    font-weight: 700;
+}
+
 .nav-menu li a { /*pourauoi ca ressmeble pas a la maquette en mode play? */
     font-size: 16px;
     font-weight: 300;
@@ -58,3 +63,16 @@ Version: 1.0
 .header-button .btn-commander:hover {
     background-color: #C02E44; /* Couleur du bouton au survol */
 }
+
+/* FOOTER */
+
+.footer-menu {
+    display: flex; /* Active Flexbox pour les éléments du menu */
+    justify-content: center; /* Centre les éléments du menu */
+    align-items: center;
+    list-style: none; /* Supprime le point */
+    height: 60px;
+    background-color: #C02E44;
+}
+
+
