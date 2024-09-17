@@ -8,3 +8,8 @@
 [16-Sep-2024 16:59:33 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Core\Components\Migrations->run_migration(): The migration `fix_optimized_size_keys` successfully executed.
 [16-Sep-2024 16:59:38 UTC] [Image Optimizer]: info in ImageOptimization\Modules\Core\Components\Migrations->run_migration(): The migration `fix_mime_type` successfully executed.
 [16-Sep-2024 16:59:43 UTC] PHP Warning:  Undefined array key "editor_post_id" in /Users/jo/Local Sites/planty/app/public/wp-content/plugins/elementor/modules/history/revisions-manager.php on line 363
+[16-Sep-2024 21:28:37 UTC] PHP Warning:  Undefined array key "editor_post_id" in /Users/jo/Local Sites/planty/app/public/wp-content/plugins/elementor/modules/history/revisions-manager.php on line 363
+[16-Sep-2024 21:59:04 UTC] PHP Warning:  Undefined array key "editor_post_id" in /Users/jo/Local Sites/planty/app/public/wp-content/plugins/elementor/modules/history/revisions-manager.php on line 363
+[16-Sep-2024 22:37:28 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[16-Sep-2024 23:15:58 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected
+[17-Sep-2024 00:28:58 UTC] [Image Optimizer]: info in ImageOptimization\Modules\ConnectManager\Components\Connect->get_connect_status(): Status check error. Reason: User is not connected

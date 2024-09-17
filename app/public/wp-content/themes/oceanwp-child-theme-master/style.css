@@ -72,6 +72,8 @@ Version: 1.0
     align-items: center;
     list-style: none; /* Supprime le point */
     height: 60px;
+    margin: 0;
+    padding: 0;
     background-color: #C02E44;
 }
 
