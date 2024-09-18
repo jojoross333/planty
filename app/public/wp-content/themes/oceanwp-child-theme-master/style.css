@@ -80,3 +80,54 @@ Version: 1.0
 .casecontact1 {
     background-color: #DC9F96;
 }
+
+/* Media queries pour tablettes (max-width: 768px) */
+@media (max-width: 768px) {
+    .main-navigation {
+        padding: 0 20px; /* Réduit les marges du header */
+    }
+    
+    .nav-menu {
+        margin-left: auto; /* Centre le menu */
+    }
+
+    .nav-menu li {
+        margin-left: 20px; /* Réduit l'espacement entre les éléments du menu */
+    }
+
+    .header-button .btn-commander {
+        padding: 8px 16px; /* Ajuste les dimensions du bouton */
+    }
+}
+
+/* Media queries pour mobiles (max-width: 480px) */
+@media (max-width: 480px) {
+    .main-navigation {
+        flex-direction: column; /* Empile les éléments verticalement */
+        align-items: flex-start; /* Aligne les éléments au début */
+        padding: 10px; /* Ajoute du padding pour respirer */
+        height: auto; /* Hauteur ajustable */
+    }
+
+    .logo {
+        margin-left: 0; /* Supprime la marge gauche sur mobile */
+        margin-bottom: 10px; /* Ajoute de l'espacement sous le logo */
+    }
+
+    .nav-menu {
+        flex-direction: column; /* Met le menu en colonne */
+        width: 100%; /* Prend toute la largeur */
+        margin: 0; /* Supprime la marge gauche */
+    }
+
+    .nav-menu li {
+        margin-left: 0; /* Supprime l'espacement entre les éléments */
+        margin-bottom: 10px; /* Ajoute de l'espacement vertical entre les éléments */
+    }
+
+    .header-button .btn-commander {
+        padding: 10px 30px; /* Ajuste le bouton pour qu'il soit plus petit */
+        width: 100%; /* Prend toute la largeur sur mobile */
+        text-align: center; /* Centre le texte */
+    }
+}
