@@ -81,6 +81,21 @@ Version: 1.0
     background-color: #DC9F96;
 }
 
+/* CSS pour "formulaire nous contacter */
+
+.input-nom {
+    width: 15px !important;
+    height: 71px;
+    background-color: white !important;
+}
+
+.form-label {
+    font-family: syne;
+    font-size: 20px;
+    font-weight: 400;
+    color: #333;
+}
+
 /* Media queries pour tablettes (max-width: 768px) */
 @media (max-width: 768px) {
     .main-navigation {
