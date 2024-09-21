@@ -84,16 +84,55 @@ Version: 1.0
 /* CSS pour "formulaire nous contacter */
 
 .input-nom {
-    width: 15px !important;
+    width: 383px !important;
     height: 71px;
+    background-color: white !important;
+    border-radius: 7px !important;
+}
+
+.input-email {
+    width: 383px !important;
+    height: 71px;
+    border-radius: 7px !important;
     background-color: white !important;
 }
 
+.input-message {
+    resize: none; /* Désactive la redimension */
+    width: 383px;
+    height: 287px;
+    border-radius: 7px !important;
+    background-color: white !important;
+}
+
+.btn-envoyer {
+    width: 100%;
+    max-width: 198px;
+    height: 55px;
+    background-color: #E0B9B4 !important;
+    color: #fff;
+    border-radius: 5px;
+}
+
+.btn-envoyer:hover {
+    background-color: #C02E44 !important;
+}
+
 .form-label {
+    display: block; /* S'assure que le label occupe une ligne complète */
     font-family: syne;
     font-size: 20px;
     font-weight: 400;
     color: #333;
+}
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centre le formulaire horizontalement */
+    max-width: 400px; /* Largeur maximale du formulaire */
+    margin: 0 auto; /* Centre le conteneur */
+    padding: 20px; /* Ajoute de l'espace autour du formulaire */
 }
 
 /* Media queries pour tablettes (max-width: 768px) */
