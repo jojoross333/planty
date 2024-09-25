@@ -10,6 +10,7 @@ Version: 1.0
 
 /* Parent stylesheet should be loaded from functions.php not using @import */
 
+/* PAGE HOME */
 /* Styliser le logo */
 .logo img {
     width: 201px;
@@ -22,8 +23,8 @@ Version: 1.0
 
 /* Conteneur principal pour aligner le logo, le menu et le bouton sur une même ligne */
 .main-navigation {
-    display: flex; /* Active Flexbox pour aligner les éléments */
-    align-items: center; /* Centre verticalement les éléments */
+    display: flex; 
+    align-items: center; 
     justify-content: space-between; /* Place le logo à gauche et le menu à droite */
     height: 80px; /* Hauteur fixe du header */
 }
@@ -32,32 +33,39 @@ Version: 1.0
 .nav-menu {
     display: flex; /* Aligne les éléments du menu horizontalement */
     list-style: none; /* Supprime les puces des éléments de liste */
-    margin-left: 620px; /*ok je decale le menu mais comment ressembler a la mquaette */
+    margin-left: 620px; 
 }
 
-/* Espacement des éléments du menu */
+/* Espacement des éléments du menu et menu lien */
 .nav-menu li {
     margin-left: 50px; /* Ajuste l'espacement entre les éléments du menu */
+    font-size: 16px;
+    color: #000000;
+    font-family: 'Syne', sans-serif;
+    line-height: 19.2px;
 }
 
 .nav-menu li a:hover {
-    color: #000000;
     font-weight: 700;
+    color: #000;
+    animation: bounce 0.4s ease-in-out;
+    transition: all 0.3s ease;
 }
 
-.nav-menu li a { /*pourauoi ca ressmeble pas a la maquette en mode play? */
-    font-size: 16px;
-    font-weight: 300;
-    color: #000000;
+.nav-menu li a:focus {
+    outline: none !important; /* Supprime complètement la bordure lors du clic */
 }
 
 /* Styliser le bouton "Commander" */
 .header-button .btn-commander {
     background-color: #DC9F96;; /* Couleur de fond du bouton */
     color: #fff; /* Couleur du texte */
-    font-size: 17px;
+    font-family: 'Syne', sans-serif;
+    font-size: 16px;
     padding: 33px 69px;
     font-weight: 400;
+    line-height: 1.3; /* Ajustement plus naturel */
+    letter-spacing: 1px; /* Espacement entre les lettres */
 }
 
 .header-button .btn-commander:hover {
@@ -67,18 +75,21 @@ Version: 1.0
 /* FOOTER */
 
 .footer-menu {
-    display: flex; /* Active Flexbox pour les éléments du menu */
+    display: flex; 
     justify-content: center; /* Centre les éléments du menu */
     align-items: center;
     list-style: none; /* Supprime le point */
     height: 60px;
     margin: 0;
     padding: 0;
-    background-color: #C02E44;
+    background-color: #ffffff;
 }
 
-.casecontact1 {
-    background-color: #DC9F96;
+.footer-menu a {
+    font-family: 'Syne', sans-serif;
+    color: black;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 /* CSS pour "formulaire nous contacter */
@@ -100,18 +111,22 @@ Version: 1.0
 .input-message {
     resize: none; /* Désactive la redimension */
     width: 383px;
-    height: 287px;
+    height: 237px;
     border-radius: 7px !important;
     background-color: white !important;
 }
 
 .btn-envoyer {
-    width: 100%;
-    max-width: 198px;
+    width: 115%;
     height: 55px;
+    font-family: 'Syne', sans-serif !important;
+    font-size: 13px !important;
+    font-weight: 100 !important;
     background-color: #E0B9B4 !important;
     color: #fff;
     border-radius: 5px;
+    margin: 0 auto;
+    text-transform: capitalize !important;
 }
 
 .btn-envoyer:hover {
@@ -129,10 +144,14 @@ Version: 1.0
 .form-wrapper {
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centre le formulaire horizontalement */
-    max-width: 400px; /* Largeur maximale du formulaire */
+    justify-content: center;
+    align-items: center; 
     margin: 0 auto; /* Centre le conteneur */
-    padding: 20px; /* Ajoute de l'espace autour du formulaire */
+}
+
+/* bloc nous rencontrer */
+.bloc-1 {
+    border-radius: 0px 0px 50px 50px; /*test */
 }
 
 /* Media queries pour tablettes (max-width: 768px) */
@@ -155,7 +174,7 @@ Version: 1.0
 }
 
 /* Media queries pour mobiles (max-width: 480px) */
-@media (max-width: 480px) {
+@media (max-width: 320px) {
     .main-navigation {
         flex-direction: column; /* Empile les éléments verticalement */
         align-items: flex-start; /* Aligne les éléments au début */
@@ -185,3 +204,4 @@ Version: 1.0
         text-align: center; /* Centre le texte */
     }
 }
+

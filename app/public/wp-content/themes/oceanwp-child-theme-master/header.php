@@ -27,7 +27,7 @@
 
 		<?php do_action( 'ocean_before_wrap' ); ?>
 
-		<div id="wrap" class="clr">
+		<div id="wrap" class="clr"> 
 		<nav id="site-navigation" class="main-navigation">
 			<div class="logo">
 				<?php
@@ -35,7 +35,7 @@
 				?>
 			</div>	
             <?php
-            wp_nav_menu( array(
+            wp_nav_menu( array(  // menu personnalisé 
 				'theme_location' => 'header', 
 				'menu_class'     => 'nav-menu',
 				'container' => false,
