@@ -158,27 +158,30 @@ Version: 1.0
 
 /* PAGE FORMURAILE COMMANDE */
 
-.commande-section { /* section des photo et fruit */
+.commande-section {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: flex-start; /* Aligne les items au sommet */
+    gap: 30px; /* Ajoute un espace entre les éléments */
 }
 
 .custom-separator { /* ligne de séparation */
     width: 60%;
     border-top: 1px solid #ffffff; /* Ligne blanche */
-    margin: -5px auto; /* Centre horizontalement et ajoute un espacement vertical */
+    margin: -50px auto; /* Centre horizontalement et ajoute un espacement vertical */
+    margin-bottom: 30px;
     display: block; /* Assure que la ligne est un élément de type bloc */
 }
 
-.commande-section .fruit { 
+.commande-section .fruit {
     display: flex;
-    flex-direction: column; /* Dispose les éléments en colonne (image au-dessus, case en dessous) */
-    align-items: center; /* Centre horizontalement la case sous l'image */
-    justify-content: center;
-    margin: 14px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
     text-align: center;
-    height: 250px;
+    height: 300px; /* Fixe une hauteur stable */
+    position: relative;
 }
 
 #quantity-pamplemousse, /* case de commande fruit */
@@ -191,6 +194,9 @@ Version: 1.0
     text-align: center;
     border: none;
     border-radius: 0;
+    font-size: 16px; /* Ajuste la taille du texte pour éviter le dépassement */
+    padding: 0; /* Supprime tout padding qui pourrait agrandir la case */
+    appearance: textfield; /* Supprime les flèches dans certains navigateurs */
 }
 
 .formulaire-complet {
