@@ -169,22 +169,26 @@ Version: 1.0
 .custom-separator { /* ligne de séparation */
     width: 60%;
     border-top: 1px solid #ffffff; /* Ligne blanche */
-    margin: -50px auto; /* Centre horizontalement et ajoute un espacement vertical */
+    margin: 0px auto; /* Centre horizontalement et ajoute un espacement vertical */
     margin-bottom: 30px;
     display: block; /* Assure que la ligne est un élément de type bloc */
+}
+
+.commande-section {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 0 215px; /* Ajoute un peu de padding pour ajuster les images aux bords */
 }
 
 .commande-section .fruit {
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
-    text-align: center;
-    height: 300px; /* Fixe une hauteur stable */
-    position: relative;
+    align-items: center; /* Centre les cases sous les images */
+    justify-content: flex-start; /* Aligne tout au sommet de la section */
+    margin-bottom: 25px;
 }
 
-#quantity-pamplemousse, /* case de commande fruit */
+#quantity-pamplemousse,
 #quantity-fraise,
 #quantity-framboise,
 #quantity-citron {
@@ -194,9 +198,21 @@ Version: 1.0
     text-align: center;
     border: none;
     border-radius: 0;
-    font-size: 16px; /* Ajuste la taille du texte pour éviter le dépassement */
-    padding: 0; /* Supprime tout padding qui pourrait agrandir la case */
-    appearance: textfield; /* Supprime les flèches dans certains navigateurs */
+    font-size: 16px;
+    padding: 0;
+    appearance: textfield;
+}
+
+/* Pour Chrome, Safari, et autres navigateurs basés sur WebKit */
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Pour Firefox */
+input[type="number"] {
+    -moz-appearance: textfield;
 }
 
 .formulaire-complet {
@@ -251,7 +267,7 @@ input[type="submit"] { /* bouton */
     width: 198px; /* Largeur du bouton */
     height: 55px; /* Hauteur du bouton */
     font-family: 'Syne', sans-serif !important; /* Police */
-    font-size: 10px; /* Taille du texte */
+    font-size: 12px; /* Taille du texte */
     font-weight: 400; /* Épaisseur du texte */
     border: none; /* Pas de bordure */
     border-radius: 5px; 
