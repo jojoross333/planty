@@ -2,7 +2,7 @@
 # This file is distributed under the same license as the Plugins - Elementor Website Builder &#8211; More than Just a Page Builder - Stable (latest release) package.
 msgid ""
 msgstr ""
-"PO-Revision-Date: 2024-08-28 14:33:10+0000\n"
+"PO-Revision-Date: 2024-09-22 23:04:44+0000\n"
 "MIME-Version: 1.0\n"
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: 8bit\n"
@@ -10,6 +10,173 @@ msgstr ""
 "X-Generator: GlotPress/4.0.1\n"
 "Language: fr\n"
 "Project-Id-Version: Plugins - Elementor Website Builder &#8211; More than Just a Page Builder - Stable (latest release)\n"
+
+#: modules/floating-buttons/widgets/floating-bars-var-1.php:25
+msgid "Floating Bar CTA"
+msgstr "Barre CTA flottante"
+
+#: modules/floating-buttons/module.php:46 assets/js/editor.js:50776
+msgid "Floating Bars"
+msgstr "Barres flottantes"
+
+#: modules/floating-buttons/documents/floating-buttons.php:203
+#: modules/floating-buttons/module.php:380
+msgid "Floating Element"
+msgstr "Élément flottant"
+
+#. translators: 1: Platform name.
+#: modules/floating-buttons/classes/render/contact-buttons-render-base.php:270
+msgid "Open %1$s"
+msgstr "Ouvrir %1$s"
+
+#. translators: 1: Accessible name.
+#: modules/floating-buttons/classes/render/contact-buttons-render-base.php:112
+#: modules/floating-buttons/classes/render/floating-bars-core-render.php:112
+msgid "Close %1$s"
+msgstr "Fermer %1$s"
+
+#. translators: 1: Accessible name.
+#: modules/floating-buttons/classes/render/contact-buttons-render-base.php:87
+msgid "Toggle %1$s"
+msgstr "Permuter %1$s"
+
+#: modules/floating-buttons/base/widget-floating-bars-base.php:1241
+msgid "Headline"
+msgstr "Titre"
+
+#: modules/floating-buttons/base/widget-floating-bars-base.php:1195
+msgid "Element spacing"
+msgstr "Espacement des éléments"
+
+#: modules/floating-buttons/base/widget-floating-bars-base.php:1165
+msgid "Align Elements"
+msgstr "Aligner les éléments"
+
+#: modules/floating-buttons/base/widget-floating-bars-base.php:1031
+msgid "Horizontal position"
+msgstr "Position horizontale"
+
+#: modules/floating-buttons/base/widget-floating-bars-base.php:321
+msgid "Enter your text"
+msgstr "Saisissez votre texte"
+
+#: modules/floating-buttons/base/widget-floating-bars-base.php:297
+msgid "Headlines"
+msgstr "Titres"
+
+#: modules/floating-buttons/base/widget-floating-bars-base.php:222
+msgid "Pause Icon"
+msgstr "Icône « Pause »"
+
+#: modules/floating-buttons/base/widget-floating-bars-base.php:210
+#: modules/floating-buttons/base/widget-floating-bars-base.php:1112
+msgid "Pause and Play"
+msgstr "Pause et lecture"
+
+#: modules/floating-buttons/base/widget-floating-bars-base.php:201
+#: modules/floating-buttons/base/widget-floating-bars-base.php:1155
+msgid "Floating Bar"
+msgstr "Barre flottante"
+
+#: modules/floating-buttons/base/widget-floating-bars-base.php:181
+msgid "Accessible Name"
+msgstr "Nom accessible"
+
+#: modules/floating-buttons/base/widget-floating-bars-base.php:139
+msgid "Shop now"
+msgstr "Acheter maintenant"
+
+#: modules/floating-buttons/base/widget-floating-bars-base.php:138
+#: modules/floating-buttons/base/widget-floating-bars-base.php:186
+msgid "Enter text"
+msgstr "Saisir le texte"
+
+#: modules/floating-buttons/base/widget-floating-bars-base.php:125
+#: modules/floating-buttons/base/widget-floating-bars-base.php:537
+msgid "CTA Button"
+msgstr "Bouton d’appel à l’action"
+
+#: modules/floating-buttons/base/widget-floating-bars-base.php:113
+msgid "Enter your text here"
+msgstr "Saisissez votre texte ici"
+
+#: modules/floating-buttons/base/widget-floating-bars-base.php:87
+#: modules/floating-buttons/base/widget-floating-bars-base.php:373
+msgid "Announcement"
+msgstr "Annonce"
+
+#: modules/floating-buttons/base/widget-floating-bars-base.php:51
+msgid "Banner"
+msgstr "Bannière"
+
+#: modules/floating-buttons/base/widget-floating-bars-base.php:46
+msgid "Just in! Cool summer tees"
+msgstr "Nouveautés ! T-shirts d’été cool"
+
+#: modules/floating-buttons/base/widget-contact-button-base.php:754
+msgid "Add up to <b>%d</b> contact buttons"
+msgstr "Ajoutez jusqu’à <b>%d</b> boutons de contact"
+
+#: modules/floating-buttons/base/widget-contact-button-base.php:741
+msgid "Add between <b>%1$d</b> to <b>%2$d</b> contact buttons"
+msgstr "Ajouter entre <b>%1$d</b> et <b>%2$d</b> boutons de contact"
+
+#: modules/floating-buttons/base/widget-contact-button-base.php:456
+#: modules/floating-buttons/base/widget-contact-button-base.php:712
+msgid "Add accessible name"
+msgstr "Ajouter un nom accessible"
+
+#: modules/floating-buttons/base/widget-contact-button-base.php:453
+#: modules/floating-buttons/base/widget-contact-button-base.php:709
+msgid "Accessible name"
+msgstr "Nom accessible"
+
+#: modules/floating-buttons/admin-menu-items/floating-buttons-menu-item.php:22
+#: modules/floating-buttons/admin-menu-items/floating-buttons-menu-item.php:26
+#: modules/floating-buttons/documents/floating-buttons.php:207
+msgid "Floating Elements"
+msgstr "Éléments flottants"
+
+#: modules/checklist/steps/create-pages.php:36
+msgid "Create a new page"
+msgstr "Créer une nouvelle page"
+
+#: modules/checklist/steps/create-pages.php:32
+msgid "Jumpstart your creation with professional designs form the Template Library or start from scratch."
+msgstr "Lancez votre création avec des conceptions professionnelles depuis la bibliothèque de modèles ou partez de zéro."
+
+#: modules/checklist/steps/create-pages.php:28
+msgid "Create your first 3 pages"
+msgstr "Créez vos 3 premières pages"
+
+#: modules/atomic-widgets/widgets/atomic-heading.php:98
+msgid "Your Title Here"
+msgstr "Votre titre ici"
+
+#: modules/atomic-widgets/widgets/atomic-heading.php:46
+msgid "Tag"
+msgstr "Étiquette"
+
+#: includes/admin-templates/new-floating-elements.php:50
+msgid "Create Floating Element"
+msgstr "Créer un élément flottant"
+
+#: includes/admin-templates/new-floating-elements.php:31
+msgid "Choose Floating Element"
+msgstr "Choisir un élément flottant"
+
+#: includes/admin-templates/new-floating-elements.php:21
+msgid "Use floating elements to engage your visitors and increase conversions."
+msgstr "Utiliser des éléments flottants pour engager les internautes et augmenter les conversions."
+
+#. translators: %1$s Span open tag, %2$s: Span close tag.
+#: includes/admin-templates/new-floating-elements.php:16
+msgid "Floating Elements Help You %1$sWork Efficiently%2$s"
+msgstr "Les éléments flottants vous aident à %1$stravailler efficacement%2$s"
+
+#: core/debug/classes/shop-page-edit.php:23
+msgid "Sorry, The content area was not been found on your page"
+msgstr "Désolé, la zone de contenu n’a pas été trouvée sur votre page."
 
 #: modules/link-in-bio/widgets/link-in-bio.php:28
 msgid "Minimalist"
@@ -4814,7 +4981,7 @@ msgstr "Séparateur"
 #: includes/template-library/sources/admin-menu-items/add-new-template-menu-item.php:23
 #: modules/landing-pages/module.php:271 assets/js/app-packages.js:4610
 #: assets/js/packages/editor-site-navigation/editor-site-navigation.js:2
-#: assets/js/packages/editor-site-navigation/editor-site-navigation.strings.js:8
+#: assets/js/packages/editor-site-navigation/editor-site-navigation.strings.js:5
 msgid "Add New"
 msgstr "Ajouter"
 
@@ -4883,7 +5050,7 @@ msgstr "Rechercher des modèles :"
 #: assets/js/packages/editor-site-navigation/editor-site-navigation.js:2
 #: assets/js/packages/editor-site-navigation/editor-site-navigation.strings.js:1
 #: assets/js/packages/editor-site-navigation/editor-site-navigation.strings.js:3
-#: assets/js/packages/editor-site-navigation/editor-site-navigation.strings.js:7
+#: assets/js/packages/editor-site-navigation/editor-site-navigation.strings.js:4
 msgid "Pages"
 msgstr "Pages"
 
@@ -6590,6 +6757,11 @@ msgstr "Boucle infinie"
 #: includes/widgets/image-carousel.php:210
 msgid "Dots"
 msgstr "Points"
+
+#: includes/controls/groups/typography.php:321
+msgctxt "Typography Control"
+msgid "Width"
+msgstr "Largeur"
 
 #: includes/widgets/accordion.php:239 includes/widgets/counter.php:238
 #: includes/widgets/icon-box.php:203 includes/widgets/image-box.php:178
