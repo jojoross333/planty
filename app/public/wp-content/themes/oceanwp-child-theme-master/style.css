@@ -11,6 +11,8 @@ Version: 1.0
 /* Parent stylesheet should be loaded from functions.php not using @import */
 
 /* PAGE HOME */
+
+/* HEADER */
 /* Styliser le logo */
 .logo img {
     width: 201px;
@@ -181,6 +183,7 @@ Version: 1.0
 }
 
 .commande-section .fruit {
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center; /* Centre les cases sous les images */
@@ -203,16 +206,17 @@ Version: 1.0
     appearance: textfield;
 }
 
-/* Pour Chrome, Safari, et autres navigateurs basés sur WebKit */
+/* Pour Chrome, Safari, Edge et Opera */
 input[type="number"]::-webkit-outer-spin-button,
 input[type="number"]::-webkit-inner-spin-button {
     -webkit-appearance: none;
     margin: 0;
 }
 
-/* Pour Firefox */
+/* Propriété standard pour tous les navigateurs */
 input[type="number"] {
-    -moz-appearance: textfield;
+    -moz-appearance: textfield; /* Pour Firefox */
+    appearance: none; /* Pour les navigateurs qui respectent la propriété standard */
 }
 
 .formulaire-complet {
@@ -327,6 +331,35 @@ input[type="submit"]:hover {
         padding: 10px 30px; /* Ajuste le bouton pour qu'il soit plus petit */
         width: 100%; /* Prend toute la largeur sur mobile */
         text-align: center; /* Centre le texte */
+    }
+}
+
+/* QUERIE MOBILE POUR "NOUS CONTACTER" */
+
+/* Media query pour les écrans max 320px */
+@media (max-width: 320px) {
+    .input-nom,
+    .input-email,
+    .input-message {
+        width: 280px !important; /* Réduit la largeur des champs à 280px */
+        height: auto; /* Permet aux champs d'ajuster leur hauteur naturellement */
+    }
+
+    .btn-envoyer {
+        width: 100% !important; /* Le bouton prend toute la largeur disponible */
+        max-width: 280px; /* Largeur max pour correspondre aux inputs */
+        height: auto; /* Ajuste la hauteur automatiquement */
+        padding: 15px !important; /* Ajoute un peu de padding pour un bouton plus agréable */
+        font-size: 14px !important; /* Ajuste la taille de la police pour mobile */
+    }
+
+    .form-wrapper {
+        width: 100%; /* Le wrapper prend toute la largeur disponible */
+        padding: 10px; /* Ajoute un padding pour aérer */
+    }
+
+    .form-label {
+        font-size: 16px; /* Réduit la taille du texte pour le rendre plus lisible */
     }
 }
 
