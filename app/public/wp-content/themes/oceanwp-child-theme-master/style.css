@@ -96,50 +96,50 @@ Version: 1.0
 
 /* CSS pour "formulaire nous contacter */
 
-.input-nom {
-    width: 383px !important;
+.form-wrapper .input-nom {
+    width: 383px;
     height: 71px;
-    margin-top: 5px !important;
-    background-color: white !important;
-    border: none !important;
-    border-radius: 7px !important;
+    margin-top: 5px;
+    background-color: white;
+    border: none;
+    border-radius: 7px;
 }
 
-.input-email {
-    width: 383px !important;
+.form-wrapper .input-email {
+    width: 383px;
     height: 71px;
-    margin-top: 5px !important;
-    border: none !important;
-    border-radius: 7px !important;
-    background-color: white !important;
+    margin-top: 5px;
+    border: none;
+    border-radius: 7px;
+    background-color: white;
 }
 
-.input-message {
+.form-wrapper .input-message {
     resize: none; /* Désactive la redimension */
     width: 383px;
     height: 237px;
-    margin-top: 5px !important;
-    border: none !important;
-    border-radius: 7px !important;
-    background-color: white !important;
+    margin-top: 5px;
+    border: none;
+    border-radius: 7px;
+    background-color: white;
 }
 
-.btn-envoyer {
-    width: 198px !important;
+.form-wrapper .btn-envoyer {
+    width: 198px;
     height: 55px;
-    font-family: 'Syne', sans-serif !important;
-    margin-top: 2px !important;
-    font-size: 13px !important;
-    font-weight: 100 !important;
-    background-color: #E0B9B4 !important;
+    font-family: 'Syne', sans-serif;
+    margin-top: 2px;
+    font-size: 13px;
+    font-weight: 100;
+    background-color: #E0B9B4;
     color: #fff;
     border-radius: 5px;
     margin: 0 auto;
-    text-transform: capitalize !important;
+    text-transform: capitalize;
 }
 
-.btn-envoyer:hover {
-    background-color: #C02E44 !important;
+.form-wrapper .btn-envoyer:hover {
+    background-color: #C02E44;
 }
 
 .form-label {
@@ -164,31 +164,19 @@ Version: 1.0
     display: flex;
     flex-direction: row;
     justify-content: center;
-    align-items: flex-start; /* Aligne les items au sommet */
-    gap: 30px; /* Ajoute un espace entre les éléments */
-}
-
-.custom-separator { /* ligne de séparation */
-    width: 60%;
-    border-top: 1px solid #ffffff; /* Ligne blanche */
-    margin: 0px auto; /* Centre horizontalement et ajoute un espacement vertical */
-    margin-bottom: 30px;
-    display: block; /* Assure que la ligne est un élément de type bloc */
-}
-
-.commande-section {
-    display: flex;
-    justify-content: space-evenly;
-    padding: 0 215px; /* Ajoute un peu de padding pour ajuster les images aux bords */
+    align-items: flex-start; /* Alignement des items au sommet */
+    gap: 30px; /* Espace entre les éléments */
+    padding: 0 50px; /* Ajustement du padding pour petits écrans */
+    flex-wrap: wrap; /* Permet le retour à la ligne si l'espace est insuffisant */
 }
 
 .commande-section .fruit {
-    position: relative;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centre les cases sous les images */
-    justify-content: flex-start; /* Aligne tout au sommet de la section */
+    align-items: center; /* Centre la case number sous l'image */
+    justify-content: flex-start;
     margin-bottom: 25px;
+    text-align: center; /* Centre le contenu */
 }
 
 #quantity-pamplemousse,
@@ -204,6 +192,14 @@ Version: 1.0
     font-size: 16px;
     padding: 0;
     appearance: textfield;
+}
+
+.custom-separator { /* ligne de séparation */
+    width: 60%;
+    border-top: 1px solid #ffffff; /* Ligne blanche */
+    margin: 0px auto; /* Centre horizontalement et ajoute un espacement vertical */
+    margin-bottom: 30px;
+    display: block; /* Assure que la ligne est un élément de type bloc */
 }
 
 /* Pour Chrome, Safari, Edge et Opera */
@@ -282,7 +278,7 @@ input[type="submit"] { /* bouton */
 input[type="submit"]:hover {
     background-color: #C02E44; /* Nouvelle couleur lors du survol */
 }
-
+/* media querie HEADER page home */
 /* Media queries pour tablettes (max-width: 768px) */
 @media (max-width: 768px) {
     .main-navigation {
@@ -362,4 +358,55 @@ input[type="submit"]:hover {
         font-size: 16px; /* Réduit la taille du texte pour le rendre plus lisible */
     }
 }
+
+/* Pour les petits écrans comme 320px */
+@media only screen and (max-width: 320px) {
+    /* Section des fruits */
+    .commande-section {
+        flex-direction: column; /* Affiche les éléments verticalement */
+        align-items: center; /* Centre les éléments */
+        padding: 0; /* Supprime le padding */
+    }
+
+    .commande-section .fruit {
+        margin-bottom: 20px; /* Ajoute un espace entre les éléments */
+    }
+
+    /* Redimensionner les cases number */
+    #quantity-pamplemousse,
+    #quantity-fraise,
+    #quantity-framboise,
+    #quantity-citron {
+        width: 60px; /* Largeur ajustée */
+        height: 40px; /* Hauteur ajustée */
+        font-size: 14px; /* Taille du texte ajustée */
+    }
+
+    /* Formulaire complet */
+    .formulaire-complet {
+        flex-direction: column; /* Colonne pour les petits écrans */
+        max-width: 90%; /* Ajuste la largeur du formulaire */
+        padding: 0 20px; /* Ajoute du padding pour ne pas toucher les bords */
+    }
+
+    /* Colonne de gauche (informations personnelles) */
+    .info-commande, .info-livraison {
+        width: 100%; /* Prend toute la largeur */
+        border: none; /* Supprime la ligne de séparation */
+        padding: 0; /* Supprime le padding */
+    }
+
+    /* Champs du formulaire */
+    .input-field {
+        width: 100% !important; /* Les champs prennent toute la largeur */
+        max-width: 100%; /* S'assure qu'ils ne débordent pas */
+    }
+
+    /* Bouton Commander */
+    input[type="submit"] {
+        width: 100%; /* Prend toute la largeur du conteneur */
+        font-size: 14px; /* Taille du texte un peu plus grande */
+    }
+}
+
 

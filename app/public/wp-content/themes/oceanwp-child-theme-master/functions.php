@@ -47,3 +47,53 @@ function register_my_menus() {
     );
 }
 add_action( 'init', 'register_my_menus' );
+// ceci est l'admin 
+function add_admin_link_to_menu( $items, $args ) {
+    // Vérifier si l'utilisateur est connecté et si c'est le menu "header"
+    if ( is_user_logged_in() && $args->theme_location == 'header' ) {
+        $admin_link = '<li><a href="' . admin_url() . '">Admin</a></li>';
+        $items .= $admin_link; // Ajouter le lien "Admin" à la fin du menu
+    }
+    return $items;
+}
+add_filter( 'wp_nav_menu_items', 'add_admin_link_to_menu', 10, 2 );
+
+// Shortcode pour l'image fraise
+function afficher_image_fraise() {
+    $image_fraise = get_field('image_fraise');
+    if( $image_fraise ) {
+        return '<img src="' . esc_url($image_fraise['url']) . '" alt="' . esc_attr($image_fraise['alt']) . '" />';
+    }
+    return '';
+}
+add_shortcode('image_fraise', 'afficher_image_fraise');
+
+// Shortcode pour l'image pamplemousse
+function afficher_image_pamplemousse() {
+    $image_pamplemousse = get_field('image_pamplemousse');
+    if( $image_pamplemousse ) {
+        return '<img src="' . esc_url($image_pamplemousse['url']) . '" alt="' . esc_attr($image_pamplemousse['alt']) . '" />';
+    }
+    return '';
+}
+add_shortcode('image_pamplemousse', 'afficher_image_pamplemousse');
+
+// Shortcode pour l'image framboise
+function afficher_image_framboise() {
+    $image_framboise = get_field('image_framboise');
+    if( $image_framboise ) {
+        return '<img src="' . esc_url($image_framboise['url']) . '" alt="' . esc_attr($image_framboise['alt']) . '" />';
+    }
+    return '';
+}
+add_shortcode('image_framboise', 'afficher_image_framboise');
+
+// Shortcode pour l'image citron
+function afficher_image_citron() {
+    $image_citron = get_field('image_citron');
+    if( $image_citron ) {
+        return '<img src="' . esc_url($image_citron['url']) . '" alt="' . esc_attr($image_citron['alt']) . '" />';
+    }
+    return '';
+}
+add_shortcode('image_citron', 'afficher_image_citron');
