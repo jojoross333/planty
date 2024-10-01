@@ -70,3 +70,8 @@
 [01-Oct-2024 14:04:20] NOTICE: exiting, bye-bye!
 [01-Oct-2024 14:04:46] NOTICE: fpm is running, pid 36443
 [01-Oct-2024 14:04:46] NOTICE: ready to handle connections
+[01-Oct-2024 15:00:57] NOTICE: Terminating ...
+[01-Oct-2024 15:00:57] NOTICE: Terminating ...
+[01-Oct-2024 15:00:57] NOTICE: exiting, bye-bye!
+[01-Oct-2024 15:10:43] NOTICE: fpm is running, pid 37730
+[01-Oct-2024 15:10:43] NOTICE: ready to handle connections

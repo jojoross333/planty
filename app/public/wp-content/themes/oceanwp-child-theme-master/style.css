@@ -195,7 +195,7 @@ Version: 1.0
 }
 
 .custom-separator { /* ligne de séparation */
-    width: 60%;
+    width: 61.5%;
     border-top: 1px solid #ffffff; /* Ligne blanche */
     margin: 0px auto; /* Centre horizontalement et ajoute un espacement vertical */
     margin-bottom: 30px;
@@ -409,4 +409,9 @@ input[type="submit"]:hover {
     }
 }
 
-
+/* Masquer l'image sur les écrans de téléphone (max 320px) */
+@media only screen and (max-width: 320px) {
+    .feuille-deco {
+        display: none !important;
+    }
+}
