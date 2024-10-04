@@ -52,7 +52,7 @@ function add_admin_link_to_menu( $items, $args ) {
     // Vérifier si l'utilisateur est connecté et si c'est le menu "header"
     if ( is_user_logged_in() && $args->theme_location == 'header' ) {
         $admin_link = '<li><a href="' . admin_url() . '">Admin</a></li>';
-        $items .= $admin_link; // Ajouter le lien "Admin" à la fin du menu
+        $items .= $admin_link; 
     }
     return $items;
 }

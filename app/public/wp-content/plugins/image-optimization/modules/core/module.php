@@ -205,7 +205,7 @@ class Module extends Module_Base {
 		$is_connect_on_fly = $module->connect_instance->get_is_connect_on_fly();
 		$connect_email = $module->connect_instance->get_connect_data()['user']['email'] ?? null;
 		$show_reset = ! $module->connect_instance->is_connected()
-							&& ( $module->connect_instance->get_client_id() || $module->connect_instance->get_client_secret );
+							&& ( $module->connect_instance->get_client_id() || $module->connect_instance->get_client_secret() );
 
 		wp_localize_script(
 			'image-optimization-admin',

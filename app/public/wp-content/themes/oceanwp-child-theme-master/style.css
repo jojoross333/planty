@@ -298,7 +298,7 @@ input[type="submit"]:hover {
     }
 }
 
-/* Media queries pour mobiles (max-width: 480px) */
+/* Media queries pour mobiles */
 @media (max-width: 320px) {
     .main-navigation {
         flex-direction: column; /* Empile les éléments verticalement */
@@ -327,6 +327,22 @@ input[type="submit"]:hover {
         padding: 10px 30px; /* Ajuste le bouton pour qu'il soit plus petit */
         width: 100%; /* Prend toute la largeur sur mobile */
         text-align: center; /* Centre le texte */
+    }
+}
+
+/* Media queries pour tablettes */
+@media (min-width: 768px) and (max-width: 1024px) {
+    .nav-menu li {
+        margin-right: 20px; /* Ajoute de l'espacement entre les éléments du menu */
+    }
+
+    .header-button .btn-commander {
+        margin-left: 20px; /* Ajoute de l'espacement entre "Admin" et le bouton "Commander" */
+        padding: 10px 30px; /* Ajuste la taille du bouton si besoin */
+    }
+
+    .main-navigation {
+        padding-right: 20px; /* Ajoute du padding à droite pour que tout respire */
     }
 }
 
@@ -409,7 +425,55 @@ input[type="submit"]:hover {
     }
 }
 
-/* Masquer l'image sur les écrans de téléphone (max 320px) */
+/* Pour les écrans de tablette comme 768px */
+@media only screen and (max-width: 768px) {
+    /* Section des fruits */
+    .commande-section {
+        flex-direction: column; /* Les images des fruits et les champs number en colonne */
+        align-items: center; /* Centre les éléments */
+        padding: 0 20px; /* Ajuste le padding pour les petits écrans */
+        gap: 20px; /* Réduit l'espace entre les éléments */
+    }
+
+    /* Redimensionner les cases number */
+    #quantity-pamplemousse,
+    #quantity-fraise,
+    #quantity-framboise,
+    #quantity-citron {
+        width: 50px; /* Ajuste la largeur */
+        height: 40px; /* Ajuste la hauteur */
+        font-size: 14px; /* Ajuste la taille du texte */
+    }
+
+    /* Formulaire complet */
+    .formulaire-complet {
+        flex-direction: column; /* Colonne pour les écrans de tablette */
+        max-width: 100%; /* Le formulaire prend toute la largeur */
+        padding: 0 30px; /* Ajoute du padding */
+    }
+
+    /* Colonne de gauche (informations personnelles) et colonne de droite (livraison) */
+    .info-commande, .info-livraison {
+        width: 100%; /* Chaque section prend toute la largeur */
+        border: none; /* Supprime la ligne de séparation */
+        padding: 0; /* Supprime le padding */
+        margin-bottom: 20px; /* Ajoute un espace entre les sections */
+    }
+
+    /* Champs du formulaire */
+    .input-field {
+        width: 100% !important; /* Les champs prennent toute la largeur */
+        max-width: 100%; /* S'assure qu'ils ne débordent pas */
+    }
+
+    /* Bouton Commander */
+    input[type="submit"] {
+        width: 100%; /* Prend toute la largeur du conteneur */
+        font-size: 16px; /* Taille du texte ajustée */
+    }
+}
+
+/* Masquer l'image sur les écrans de téléphone pour "nous contacter" (max 320px) */
 @media only screen and (max-width: 320px) {
     .feuille-deco {
         display: none !important;

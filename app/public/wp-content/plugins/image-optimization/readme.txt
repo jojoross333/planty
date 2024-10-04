@@ -4,7 +4,7 @@ Tags: image optimization, image compression, convert webp, convert avif, perform
 Requires at least: 6.2
 Tested up to: 6.6
 Requires PHP: 7.4
-Stable tag: 1.5.3
+Stable tag: 1.5.4
 License: GPL-3
 License URI: https://www.gnu.org/licenses/gpl-3.0.en.html
 
@@ -110,8 +110,14 @@ Yes, the Elementor team offers full support for image optimization questions. Yo
 1. Image Optimizer - Settings Page
 2. Image Optimizer - Bulk Optimization Page
 3. Image Optimizer - Bulk Actions and Individual Actions in the Media Library
+4. Image Optimizer - Image Optimization in the Media Library
+5. Image Optimizer - Image Optimization in the Media Uploader
 
 == Changelog ==
+= 1.5.4 - 2024-10-01 =
+* New: Added a notice to help users connect from dashboard
+* Fix: Undefined property notice
+* Fix: Improved support for caching plugins
 
 = 1.5.3 - 2024-09-24 =
 * New: Added an option to reset connect when invalid
