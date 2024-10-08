@@ -25,17 +25,18 @@ Version: 1.0
 
 /* Conteneur principal pour aligner le logo, le menu et le bouton sur une même ligne */
 .main-navigation {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between; /* Place le logo à gauche et le menu à droite */
-    height: 80px; /* Hauteur fixe du header */
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Aligner les éléments à gauche */
+    height: 80px;
+    gap: 40px; /* Ajouter un espacement uniforme entre les éléments */
 }
 
-/* Styliser le menu */
 .nav-menu {
-    display: flex; /* Aligne les éléments du menu horizontalement */
-    list-style: none; /* Supprime les puces des éléments de liste */
-    margin-left: 620px; 
+    display: flex;
+    list-style: none;
+    margin-left: auto; /* Pousse le menu vers la droite */
+    margin-right: 30px; /* Ajoute un espacement avec le bouton */
 }
 
 /* Espacement des éléments du menu et menu lien */
